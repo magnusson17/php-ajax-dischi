@@ -86,10 +86,10 @@ $database = [
 
     <div id="app" class="bg_1E2D3B">
         <div>
-            <form method="GET">
-                <input type="text" name="genre" placeholder="genere">
-                <input type="submit">
-            </form>
+            <select v-model="selectGenre" name="" id="" onchange="genreFunction()">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+            </select>
         </div>
 
         <div class="container d-flex justify-content-center py-5">
