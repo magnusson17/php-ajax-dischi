@@ -85,6 +85,13 @@ $database = [
     ?> -->
 
     <div id="app" class="bg_1E2D3B">
+        <div>
+            <form method="GET">
+                <input type="text" name="genre" placeholder="genere">
+                <input type="submit">
+            </form>
+        </div>
+
         <div class="container d-flex justify-content-center py-5">
             <div class="row row-cols-6 justify-content-center">
                 <div v-for="(element, index) in arrayElementi" class="col p-2 m-2 text-white bg_2E3A46">
