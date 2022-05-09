@@ -12,13 +12,18 @@ var app = new Vue({
       .then((res) => {
         console.log(res.data);
         this.arrayElementi = res.data;
-        console.log(this.selectGenre);
-          })
+      })
     },
-
+    
     methods: {
       genreFunction() {
-
+        console.log(this.selectGenre);
+        for(i = 0; i < this.arrayElementi; i++) {
+          console.log(this.arrayElementi[i].genre);
+          if(this.arrayElementi[i].genre.includes(this.selectGenre)) {
+            this.arrayElementi = this.arrayElementi[i].genre
+          }
+        }
       }
     }
 })

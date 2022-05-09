@@ -86,7 +86,7 @@ $database = [
 
     <div id="app" class="bg_1E2D3B">
         <div>
-            <select v-model="selectGenre" name="" id="" onchange="genreFunction()">
+            <select v-model="selectGenre" name="" id="" @change="genreFunction">
                 <option value="Rock">Rock</option>
                 <option value="Pop">Pop</option>
             </select>
