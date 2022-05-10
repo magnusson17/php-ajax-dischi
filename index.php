@@ -24,9 +24,9 @@ Attraverso un’altra chiamata api, filtrare gli album per genere
 
     <div id="app" class="bg_1E2D3B">
         <div>
-            <select v-model="selectGenre" name="" id="" @change="genreFunction">
-                <option value="Rock">Rock</option>
-                <option value="Pop">Pop</option>
+            <select v-model="selectGenre" name="" id="" @change="genreSelector">
+                <option value="">Tutti i generi</option>
+                <option v-for="genere in generi" :value="genere">{{genere}}</option>
             </select>
         </div>
 
